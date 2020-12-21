@@ -3,7 +3,11 @@ package com.codersbay;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        EmailChecker emailChecker = new EmailChecker("alloha@gmail.com");
+        emailChecker.checkForSpecialCharacters();
+        emailChecker.checkIfAtIsThere();
+        emailChecker.checkIfEmailContainsDomain();
+        emailChecker.checkIfXUserPutsAreBeforeAtSymbol();
     }
 
 }
